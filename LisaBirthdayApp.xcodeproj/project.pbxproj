@@ -23,6 +23,9 @@
 		57FDB70616A76D36007E7E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57FDB6E116A76D35007E7E76 /* Foundation.framework */; };
 		57FDB70E16A76D36007E7E76 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57FDB70C16A76D36007E7E76 /* InfoPlist.strings */; };
 		57FDB71116A76D36007E7E76 /* LisaBirthdayAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FDB71016A76D36007E7E76 /* LisaBirthdayAppTests.m */; };
+		57FDB71D16A76DEC007E7E76 /* ODSDataStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 57FDB71C16A76DEC007E7E76 /* ODSDataStorage.m */; };
+		57FDB71F16A7A0D3007E7E76 /* shoplist.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FDB71E16A7A0D3007E7E76 /* shoplist.png */; };
+		57FDB72116A7A221007E7E76 /* folder.png in Resources */ = {isa = PBXBuildFile; fileRef = 57FDB72016A7A221007E7E76 /* folder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		57FDB70D16A76D36007E7E76 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		57FDB70F16A76D36007E7E76 /* LisaBirthdayAppTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LisaBirthdayAppTests.h; sourceTree = "<group>"; };
 		57FDB71016A76D36007E7E76 /* LisaBirthdayAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LisaBirthdayAppTests.m; sourceTree = "<group>"; };
+		57FDB71B16A76DEC007E7E76 /* ODSDataStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ODSDataStorage.h; sourceTree = "<group>"; };
+		57FDB71C16A76DEC007E7E76 /* ODSDataStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ODSDataStorage.m; sourceTree = "<group>"; };
+		57FDB71E16A7A0D3007E7E76 /* shoplist.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shoplist.png; sourceTree = "<group>"; };
+		57FDB72016A7A221007E7E76 /* folder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +129,8 @@
 				57FDB6F716A76D36007E7E76 /* LBViewController.h */,
 				57FDB6F816A76D36007E7E76 /* LBViewController.m */,
 				57FDB6FA16A76D36007E7E76 /* LBViewController.xib */,
+				57FDB71E16A7A0D3007E7E76 /* shoplist.png */,
+				57FDB72016A7A221007E7E76 /* folder.png */,
 				57FDB6E616A76D35007E7E76 /* Supporting Files */,
 			);
 			path = LisaBirthdayApp;
@@ -130,6 +139,7 @@
 		57FDB6E616A76D35007E7E76 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				57FDB71A16A76DEC007E7E76 /* OSDataStorage */,
 				57FDB6E716A76D35007E7E76 /* LisaBirthdayApp-Info.plist */,
 				57FDB6E816A76D35007E7E76 /* InfoPlist.strings */,
 				57FDB6EB16A76D36007E7E76 /* main.m */,
@@ -158,6 +168,15 @@
 				57FDB70C16A76D36007E7E76 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		57FDB71A16A76DEC007E7E76 /* OSDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				57FDB71B16A76DEC007E7E76 /* ODSDataStorage.h */,
+				57FDB71C16A76DEC007E7E76 /* ODSDataStorage.m */,
+			);
+			path = OSDataStorage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +256,8 @@
 				57FDB6F416A76D36007E7E76 /* Default@2x.png in Resources */,
 				57FDB6F616A76D36007E7E76 /* Default-568h@2x.png in Resources */,
 				57FDB6FC16A76D36007E7E76 /* LBViewController.xib in Resources */,
+				57FDB71F16A7A0D3007E7E76 /* shoplist.png in Resources */,
+				57FDB72116A7A221007E7E76 /* folder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +295,7 @@
 				57FDB6EC16A76D36007E7E76 /* main.m in Sources */,
 				57FDB6F016A76D36007E7E76 /* LBAppDelegate.m in Sources */,
 				57FDB6F916A76D36007E7E76 /* LBViewController.m in Sources */,
+				57FDB71D16A76DEC007E7E76 /* ODSDataStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
