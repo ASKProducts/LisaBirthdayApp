@@ -7,13 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class CODialog;
 @interface LBViewController : UIViewController
 - (IBAction)NewFolder:(id)sender;
 - (IBAction)NewItem:(id)sender;
 - (IBAction)refresh:(id)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *listContent;
--(UIView*)createListItemWithIndex:(int)ind andTitle:(NSString*)title andType:(NSString*)itemType;
+-(UIView*)createListItemWithIndex:(int)ind andTitle:(NSString*)title andType:(NSString*)itemType andQuantity:(NSString*)quan;
 -(CGSize)calculateContentSize;
--(void)editItem:(UIView*)item;
+-(void)editItemOfIndex:(int)indexOfItem;
+@property (strong)CODialog *dialog;
+@property NSMutableArray *currentDirectory;
+-(NSArray*)getCurrentList;
+-(void)editFolder;
 @end

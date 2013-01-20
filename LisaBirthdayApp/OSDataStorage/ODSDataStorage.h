@@ -20,8 +20,8 @@
 @interface ODSDataStorage : NSObject
 +(void)loadURL:(NSString*)aurl forMethod:(NSString*)method;
 +(NSMutableDictionary*)onlineData;
-+(NSString*)getValueForKey:(NSString*)key;
++(id)getValueForKey:(NSString*)key;
 
-+(void)setValue:(NSString*)value withKey:(NSString*)key;
++(void)setValue:(id)value withKey:(NSString*)key;
 
 @end

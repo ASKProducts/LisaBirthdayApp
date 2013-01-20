@@ -52,12 +52,12 @@
     return data;
 }
 
-+(NSString*)getValueForKey:(NSString*)key{
++(id)getValueForKey:(NSString*)key{
     NSMutableDictionary *onlineData = [ODSDataStorage onlineData];
     return [onlineData valueForKey:key];
 }
 
-+(void)setValue:(NSString*)value withKey:(NSString*)key{
++(void)setValue:(id)value withKey:(NSString*)key{
     //NSString *url = [NSString stringWithFormat:@"ASKProductsDatabase4499-%@",key,value];
     NSMutableDictionary *onlineData = [ODSDataStorage onlineData];
     [onlineData setValue:value forKey:key];
